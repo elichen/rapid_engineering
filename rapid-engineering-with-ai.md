@@ -18,7 +18,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ## From "Vibe Coding" to **Rapid Engineering**
 
 Like architects who design buildings, not construct them:
-- The speed and cost of coding → 0
+- The effort and cost of coding → 0
 - Engineering decisions remain critical
 
 **We're not writing less code, we're making more decisions**
