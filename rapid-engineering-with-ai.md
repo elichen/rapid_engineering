@@ -27,7 +27,7 @@ Like architects who design buildings, not construct them:
 
 # What is Rapid Engineering?
 
-- **Speed of implementation** approaches zero
+- **Effort of implementation** approaches zero
 - **Engineering judgment** becomes everything
 - **System thinking** over syntax knowledge
 - **Architecture decisions** over implementation details
