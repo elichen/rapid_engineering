@@ -95,6 +95,15 @@ Claude Code with Opus 4:
 
 ---
 
+# Tasks complexity exploding
+
+![w:500](7months.png)
+
+- Task complexity increases exponentially
+- What was impossible yesterday is routine today
+
+---
+
 # How to Use Claude Code Effectively
 
 ## Do:
