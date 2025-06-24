@@ -73,25 +73,9 @@ Hours    Days        Weeks         Months
 
 **Rapid Engineering**: Try 3 architectures in a week
 
-- Test microservices vs monolith
-- Experiment with data stores
+- Test SQL vs NoSQL
 - Validate scaling approaches
 - Pivot based on real learnings
-
----
-
-# The Agentic Revolution
-
-## Why Agentic Search > RAG
-
-**RAG (Cursor)**: Retrieves similar code chunks
-**Agentic (Claude Code)**: Explores with purpose
-
-Claude Code with Opus 4:
-- Searches intelligently across files
-- Builds understanding iteratively
-- Maintains context between searches
-- Adapts strategy based on findings
 
 ---
 
@@ -104,11 +88,24 @@ Claude Code with Opus 4:
 
 ---
 
+# Why Agentic Search > RAG
+
+**RAG (Cursor)**: Retrieves similar code chunks
+**Agentic (Claude Code)**: Explores with purpose
+
+Claude Code with Opus 4:
+- Searches intelligently across files
+- Builds understanding iteratively
+- Maintains context between searches
+- Adapts strategy based on findings
+
+---
+
 # How to Use Claude Code Effectively
 
 ## Do:
 - **Start with context**: "We're building X using Y"
-- **Be specific**: Include file paths, function names
+- **Be specific**: Avoid under-specifying implementation details
 - **Think in tasks**: "Find all API endpoints..."
 - **Iterate**: Build on previous responses
 
@@ -263,7 +260,7 @@ AI handles all layers:
 ## Tools:
 - **Claude Code** (Opus 4) - Agentic coding
 - **Cursor** - AI-first IDE
-- **Gemini 2.5 Pro** - AI Studio
+- **Gemini 2.5 Pro** - AI Studio (1M token context window)
 
 ---
 
