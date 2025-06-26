@@ -9,6 +9,8 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 # Rapid Engineering with AI
 ## Building at the Speed of Thought
 
+<br><br><br><br><br>
+
 ### AI Fund Engineering Practices
 
 ---
@@ -32,13 +34,13 @@ Like architects who design buildings, not construct them:
 - **System thinking** over syntax knowledge
 - **Architecture decisions** over implementation details
 
-The engineer becomes a conductor, not a performer.
+Software is becoming more about engineering, less about coding.
 
 ---
 
 # The 0-to-1 Journey
 
-## Venture Studio Reality
+## AI Fund Venture Studio Reality
 
 ```
 Idea → Prototype → First Customer → Enterprise
@@ -47,13 +49,13 @@ Hours    Days        Weeks         Months
 ```
 
 **Optimization objective constantly shifts:**
-- Speed first
-- Then connect the dots
+- Speed first - bias to action
+- Then plan the path to scaled up deployment
 - Without painting yourself into corners
 
 ---
 
-# Engineering = Multi-Axis Optimization
+# Multi-Axis Optimization
 
 **Early Stage**: Optimize for speed
 **Growth Stage**: Optimize for stability  
@@ -73,9 +75,10 @@ Hours    Days        Weeks         Months
 
 **Rapid Engineering**: Try 3 architectures in a week
 
-- Test SQL vs NoSQL
-- Validate scaling approaches
-- Pivot based on real learnings
+## Real Examples:
+- **APIs**: Stateful API had high latency variance - switched to stateless in hours
+- **Databases**: Tested Firebase/NoSQL vs Supabase/SQL side-by-side
+- **Providers**: Swapped OpenAI ↔ Gemini implementations
 
 ---
 
@@ -117,7 +120,6 @@ Claude Code with Opus 4:
 - Assume it knows your setup
 - Accept first output blindly  
 - Skip testing
-- Share secrets or credentials
 
 **Remember**: Claude Code is powerful but needs guidance
 
@@ -125,11 +127,34 @@ Claude Code with Opus 4:
 
 # Example: Effective Claude Code Usage
 
-❌ **Bad**: "First open user.routes.ts, then copy line 15..."
+❌ **Bad**: "Change the variable name from 'data' to 'userData' in the function"
 
-✅ **Good**: "Add Joi validation matching auth.routes.ts"
+✅ **Good**: "Make user data handling consistent with our auth module patterns"
 
 **Key**: Describe the outcome, not the steps!
+
+---
+
+# Common Pitfalls with AI Coding
+
+1. **Not describing the outcome**
+   ❌ "Fix the bug in the dashboard" 
+   ✅ "Users should see metrics update without page refresh"
+
+2. **Assuming limitations**
+   ❌ "AI probably can't handle database migrations"
+   ✅ Just tried: Migrated entire app from Firebase to Supabase!
+
+---
+
+# More Pitfalls to Avoid
+
+3. **Micromanaging the approach**
+   ❌ "First create a useState hook, then..."
+   ✅ "Add user authentication with session management"
+
+4. **Accepting without review**
+   Always test edge cases - AI might miss business logic nuances
 
 ---
 
@@ -173,16 +198,12 @@ Claude Code with Opus 4:
 
 # Technical Debt: Strategic Choice
 
-## Traditional View
-"Technical debt is bad"
+### Real Progression Example:
+1. **Week 1-4**: Manual testing only (faster with few features)
+2. **Month 2**: Add deployment automation (manual was slowing down)
+3. **Month 3**: Automated test suite (complexity demands it)
 
-## Rapid Engineering View
-"Technical debt is a tool"
-
-- **Know what debt you're taking**
-- **Plan the payback timing**
-- **Keep refactor paths open**
-- **Document the compromises**
+**Key**: Document WHEN to transition, not IF
 
 ---
 
@@ -195,29 +216,6 @@ AI handles all layers:
 - ML/Data pipelines ✓
 
 **Engineers guide**: Deployment strategy & architecture
-
----
-
-# Common Pitfalls with AI Coding
-
-1. **Not describing the outcome**
-   ❌ "Fix the bug" 
-   ✅ "Users should see real-time updates"
-
-2. **Assuming limitations**
-   Don't assume - just try it!
-
----
-
-# More Pitfalls to Avoid
-
-3. **Micromanaging the approach**
-   Let AI find creative solutions
-
-4. **Accepting without review**
-   Trust but verify
-
-**Remember**: AI surprises on the upside
 
 ---
 
