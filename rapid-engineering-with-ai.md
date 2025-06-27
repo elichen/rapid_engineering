@@ -106,55 +106,61 @@ Claude Code with Opus 4:
 
 # How to Use Claude Code Effectively
 
-## Do:
-- **Start with context**: "We're building X using Y"
-- **Be specific**: Avoid under-specifying implementation details
-- **Think in tasks**: "Find all API endpoints..."
-- **Iterate**: Build on previous responses
+## The Narrative Doc Approach (from Amazon):
+- **Write a comprehensive brief** before starting
+- **Front-load ALL context** in one document
+- **Include**: Background, objectives, constraints, architecture
+- **Avoid context-exhausting conversations**
 
 ---
 
-# Claude Code: What to Avoid
+# Claude Code: The Memento Principle
 
-## Don't:
-- Assume it knows your setup
-- Accept first output blindly  
-- Skip testing
-
-**Remember**: Claude Code is powerful but needs guidance
-
----
-
-# Example: Effective Claude Code Usage
-
-❌ **Bad**: "Change the variable name from 'data' to 'userData' in the function"
-
-✅ **Good**: "Make user data handling consistent with our auth module patterns"
-
-**Key**: Describe the outcome, not the steps!
+## Treat Claude like the protagonist in Memento:
+- **No memory between sessions** - leave notes!
+- **Use CLAUDE.md files** as persistent project memory
+- **Place in root or subfolders** for context-specific notes
+- **Document decisions & architecture** for "future Claude"
 
 ---
 
-# Common Pitfalls with AI Coding
+# Example: Narrative Doc Structure
 
-1. **Not describing the outcome**
-   ❌ "Fix the bug in the dashboard" 
-   ✅ "Users should see metrics update without page refresh"
+```markdown
+## Project: User Analytics Dashboard
 
-2. **Assuming limitations**
-   ❌ "AI probably can't handle database migrations"
-   ✅ Just tried: Migrated entire app from Firebase to Supabase!
+### Background
+We're migrating from Google Analytics to a custom solution...
+
+### Objectives
+- Real-time user behavior tracking
+- GDPR compliant data handling
+- Sub-100ms query performance
+
+### Architecture Decisions
+- PostgreSQL with TimescaleDB for time-series
+- React Query for caching layer
+- Event-driven updates via WebSockets
+```
 
 ---
 
-# More Pitfalls to Avoid
+# Key Do's and Don'ts
 
-3. **Micromanaging the approach**
-   ❌ "First create a useState hook, then..."
-   ✅ "Add user authentication with session management"
+**✅ Do:** Write narrative docs | Use CLAUDE.md files | Describe outcomes | Test everything
 
-4. **Accepting without review**
-   Always test edge cases - AI might miss business logic nuances
+**❌ Don't:** Drip-feed requirements | Rely on memory | Skip docs | Assume persistence
+
+---
+
+# Why This Approach Works
+
+- **Narrative docs** = Complete context in one shot
+- **CLAUDE.md files** = Persistent team knowledge
+- **Outcome focus** = AI figures out implementation
+- **Front-loading** = Preserves context window
+
+**Result**: More complex tasks, fewer iterations
 
 ---
 
@@ -256,9 +262,11 @@ AI handles all layers:
 # Resources
 
 ## Tools:
-- **Claude Code** (Opus 4) - Agentic coding
-- **Cursor** - AI-first IDE
+- **Claude Code** - Agentic coding
 - **Gemini 2.5 Pro** - AI Studio (1M token context window)
+
+## Advanced Learning:
+- **Mastering Claude Code**: https://www.youtube.com/live/6eBSHbLKuN0
 
 ---
 
