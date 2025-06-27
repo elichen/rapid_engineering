@@ -106,7 +106,7 @@ Claude Code with Opus 4:
 
 # How to Use Claude Code Effectively
 
-## The Narrative Doc Approach (from Amazon):
+## The Narrative Doc Approach:
 - **Write a comprehensive brief** before starting
 - **Front-load ALL context** in one document
 - **Include**: Background, objectives, constraints, architecture
